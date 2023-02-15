@@ -1,0 +1,13 @@
+
+TEST avec curl sur une base H2
+
+http://localhost:8080/accounts/testAddClient
+
+US 1
+curl --request POST --url http://localhost:8080/accounts/1/deposit/105.6
+
+US 2
+curl --request POST --url http://localhost:8080/accounts/1/withdrawal/40
+
+US 3
+curl http://localhost:8080/accounts/1/operations
